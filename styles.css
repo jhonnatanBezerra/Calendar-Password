@@ -25,6 +25,28 @@ body {
   padding: 1rem, 0;
 }
 
+.month-name {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.month-name h1 {
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 20px;
+  text-transform: uppercase;
+}
+
+.month-name span {
+  font-size: 30px;
+  padding: 2rem;
+}
+
+.month-name span:hover {
+  cursor: pointer;
+}
+
 #cellsCalendar {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
@@ -39,4 +61,18 @@ body {
   justify-content: space-around;
   background-color: #fff;
   height: 180px;
+  border: 0.1px solid rgba(0, 0, 0, 0.2);
+}
+
+.yesterday > span {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.yesterday > h1 {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.today {
+  background: #fff;
+  box-shadow: 0 0 1em rgba(94, 94, 98, 0.9);
 }
